@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/logos/printifyicono.ico">
+    <link rel="stylesheet" href="../CSS/formularioEstilizado.css"> 
+    <script src="https://kit.fontawesome.com/66c85cf6ac.js" crossorigin="anonymous"></script>
+    <title>Printify</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="../img/logos/logocompleto.png" alt="" width="200px" height="100px">
+        <nav>
+            <ul class="links_nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./tienda.html">Productos</a></li>
+                
+            </ul>
+        </nav>
+        <a class="cta" href="./sesion.html"><button>Iniciar sesión</button></a>
+    </header>
+    
+    <main id="hero">
+      
+        <form target="_blank" id="form" action="https://formspree.io/f/xbjeezaj" method="POST">
+            
+            <h2>Formulario de contacto</h2><br>
+   
+            <label for="nombre">Nombre y Apellido<span>*</span></label> 
+            <input type="text" id="nombre" name="Nombre y Apellido" placeholder="Ingrese su nombre y Apellido..." class="campo" required>
+
+            <label for="Fecha">Fecha Nac<span>*</span></label>
+            <input type="date" id="Fecha" name="Fecha Nac" class="campo" required><br>
+            
+            <p class="texto">Dirección:</p><br>
+            
+            <label for="Calle">Calle<span>*</span></label>
+            <input type="text" id="Calle" name="Calle" placeholder="Ingrese su calle aquí..." class="campo" required>
+            
+            <label for="Numero">Número<span>*</span></label>
+            <input type="text" id="Numero" name="Número" placeholder="Ingrese el número..." class="campo" required>
+            
+            
+            <label for="Ciudad">Ciudad<span>*</span></label>
+            <input type="text" id="Ciudad" name="Ciudad" placeholder="Ingrese la ciudad aquí..." value="CABA" class="campo" required>
+            
+            <label for="Codigo_Postal">Código Postal<span>*</span></label>
+            <input type="text" id="postal" name="Código Postal" placeholder="Ingrese su código postal aquí..." class="campo" required><br><br>
+            
+            
+            <label for="Telefono">Teléfono<span>*</span></label>
+            <input type="text" id="Telefono" name="Télefono" placeholder="Ingrese su número de teléfono..." class="campo" required>
+            <label for="Email">Mail<span>*</span></label>
+            <input type="email" id="Email" name="Email" placeholder="example@gmail.com..." class="campo" required><br>       
+            
+            
+            <p class="texto" id="genero">Género (Radio)
+                <input type="radio" name="Género" value="hombre" checked>Hombre
+                <input type="radio" name="Género" value="Mujer">Mujer
+                <input type="radio" name="Género" value="Otro"> Otro
+            </p><br>
+
+            <label for="Estudios">Estudios: (Select)</label>
+            <select id="Estudios" name="Estudios">
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+                <option value="otros">Otro</option>
+            </select>
+        
+            <br><br>
+        
+            Comentario: <br>
+            <textarea id="Comentario" name="Comentario" rows="5" cols="30" placeholder="Escribe tu comentario..." class="campo"></textarea>
+            
+            <input type="submit" value="Enviar" class="envio">        
+    
+        </form>
+        <script src="../JS/form.js"></script>
+        <video autoplay loop muted>
+            <source src="../media/pexels-free-videos-853870-1920x1080-25fps.mp4" type="video/mp4">
+        </video>
+        <div class="video-container"></div>
+
+    </main>
+    
+    <footer>
+        <section class="pie-pag">
+            <div class="box">
+                <figure>
+                        <img class="box-logo"src="../img/logos/logo.png" alt="Logo de Printify" width="180px" >
+                </figure>
+            </div>
+            <div class="box-red">
+                <a class="icon" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="icon" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="icon" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="icon" href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a class="icon" href="https://www.linkkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a class="icon" href="https://github.com/MonsalvoDeb/Proyecto-Printify.git" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            </div>
+            <div class="box1">
+                <p>Politicas de privacidad | Newsleter | Contacto</p>
+            </div>
+            <div class="box2">
+                <small> &copy; 2023 <b>Printify</b> - Todos los Derechos Reservados.</small>    
+            </div>
+        </section>   
+    </footer>
+
+</body>
+</html>
